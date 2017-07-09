@@ -7,14 +7,14 @@ var pomeloClient = function (auth) {
 
 pomeloClient.prototype.request = function (route, msg, callback) {
   var self = this;
-  self.pool.acquire(function(err, client) {
+  self.pool.acquire(function (err, client) {
     if (!!err) {
       console.error('[Pomelo Client Error] ' + err.stack);
       self.pool.release(client);
       return callback.apply(null, [errCode, err.stack]);
     }
     else {
-      client.request(route, msg, function(data){
+      client.request(route, msg, function (data) {
         self.pool.release(client);
         callback.apply(null, [null, data]);
       });
