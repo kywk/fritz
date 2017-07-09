@@ -1,0 +1,28 @@
+{
+  "name": "fritz",
+  "version": "0.0.1",
+  "description": "Simple insout/pomelo client of node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kywk/fritz.git"
+  },
+  "keywords": [
+    "pomelo",
+    "insout"
+  ],
+  "author": "Moo Cow <kywk.id@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kywk/fritz/issues"
+  },
+  "homepage": "https://github.com/kywk/fritz#readme",
+  "dependencies": {
+    "bytearray": "^0.1.3",
+    "debug-log": "^1.0.1",
+    "generic-pool": "^3.1.7"
+  }
+}
